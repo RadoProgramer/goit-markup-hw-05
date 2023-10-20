@@ -151,6 +151,7 @@ color: var(--pressed-state-color);
     line-height: 24px;
     letter-spacing: 0.02em;
     text-decoration: none;
+    transition: var(--standard-animation);
 }
 .button{
     background-color: var(--primary-brand-color);
@@ -161,6 +162,7 @@ color: var(--pressed-state-color);
     letter-spacing: 0.04em;
     color: var(--white-background-color);
     cursor: pointer;
+    transition: var(--standard-animation);
 }
 .button:hover {
     background-color: var(--pressed-state-color);
@@ -335,6 +337,7 @@ color: var(--pressed-state-color);
 .address{
     gap: 40px;
     display: flex;
+    transition: var(--standard-animation);
 }
 .address-nav{
     display: flex;
@@ -479,6 +482,7 @@ color: var(--pressed-state-color);
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: var(--standard-animation);
 }
 .social-link:hover{
     background-color: var(--pressed-state-color);
@@ -529,6 +533,7 @@ fill: var(--light-color);
     justify-content: center;
     color: var(--subtle-text-color);
     padding: 16px 32px;
+    transition: var(--standard-animation);
 }
 
 .customer-link:hover{
@@ -580,6 +585,7 @@ fill: var(--light-color);
     align-items: center;
     justify-content: center;
     fill: var(--white-background-color);
+    transition: var(--standard-animation);
 }
 .container-footer {
     display: flex;
@@ -621,11 +627,13 @@ fill: var(--light-color);
     transition: transform var(--standard-animation);    
 }
 .close-btn{
+    display: flex;
     position: absolute;
     align-items: center;
     justify-content: center;
+    padding: 0;
     top: 24px;
-    right: 25px;
+    right: 24px;
     width: 24px;
     height: 24px;
     padding-bottom: 8px;
@@ -633,15 +641,26 @@ fill: var(--light-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
-    transition: var(--standard-animation);
+    transition: var(--standard-animation), border: var(var(--standard-animation))
 }
-.close-btn:hover,
+
 .close-btn:active{
     fill: var(--white-background-color);
     border: none;
     background-color: var(--pressed-state-color);
 }
+.close-btn:hover{
+    fill: var(--white-background-color);
+    border: none;
+    background-color: var(--pressed-state-color);
+}
+.modal-svg{
+    fill: var(--standard-animation);
+}
+
+
 .link-underline {
+    color: var(--pressed-state-color);
     display: inline-block;
     font-size: 16px;
     font-weight: 500;
@@ -651,6 +670,7 @@ fill: var(--light-color);
     border-width: 48px;
     position: relative;
     text-decoration: none;
+    transition: var(--standard-animation);
 }
 .link-underline::after{
     content: "";
@@ -658,7 +678,7 @@ fill: var(--light-color);
     left: 0;
     width: 100%;
     height: 4px;
-    bottom: -1;
+    bottom: -1px;
     top: 46px;
     transform: scale(0);
     transition: var(--standard-animation);
