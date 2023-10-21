@@ -162,7 +162,7 @@ color: var(--pressed-state-color);
     letter-spacing: 0.04em;
     color: var(--white-background-color);
     cursor: pointer;
-    transition: var(--standard-animation);
+    transition: 
 }
 .button:hover {
     background-color: var(--pressed-state-color);
