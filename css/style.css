@@ -109,13 +109,16 @@ color: var(--pressed-state-color);
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+        
 }
 .contact-list:hover{
     color: var(--pressed-state-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-list:focus{
     color: var(--pressed-state-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .index-section-one{
     width: 100%;
@@ -483,7 +486,7 @@ color: var(--pressed-state-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: var(--standard-animation);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .social-link:hover{
     background-color: var(--pressed-state-color);
@@ -599,8 +602,8 @@ fill: var(--light-color);
     fill: var(--light-color);
 }
 .is-hidden{
-    opacity: 0;
     visibility: hidden;
+    opacity: 0;
     pointer-events: none;
 }
 .backdrop{
@@ -610,8 +613,9 @@ fill: var(--light-color);
     width: 100%;
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
-    transition: opacity var(--standard-animation);
-    visibility: var(--standard-animation);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    visibility: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 .modal{
     position: absolute;
@@ -625,27 +629,27 @@ fill: var(--light-color);
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
         0px 1px 3px 0px rgba(0, 0, 0, 0.12),
         0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-    transition: opcity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);;    
 }
 .close-btn{
-    display: flex;
     position: absolute;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
     top: 24px;
     right: 24px;
     width: 24px;
     height: 24px;
-    padding-bottom: 8px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--accent-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
+    padding: 0;
     cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border: 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-btn:active{
+.close-btn:focus{
     fill: var(--white-background-color);
     border: none;
     background-color: var(--pressed-state-color);
