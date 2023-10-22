@@ -250,12 +250,10 @@ color: var(--pressed-state-color);
 .kart-portfolio:focus .hide-title{
     transform: translateY(0%);
 }
-.hide-title:focus {
+.link-portfolio:focus .hide-title{
     transform: translateY(0%);
 }
-.hide-title:hover {
-    transform: translateY(0%);
-}
+
 .link-portfolio:hover{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
