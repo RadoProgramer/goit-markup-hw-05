@@ -109,9 +109,10 @@ color: var(--pressed-state-color);
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        
-        
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);      
+}
+.contact-list::after{
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-list:hover{
     color: var(--pressed-state-color);
@@ -232,7 +233,10 @@ color: var(--pressed-state-color);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .kart-portfolio:hover .hide-title{
-    transform: translateY(0);
+    transform: translateY(0%);
+}
+.kart-portfolio:focus .hide-title{
+    transform: translateY(0%);
 }
 .li-portfolio-next:hover .li-portfolio-next:active {
     transform: translateY(0%);
@@ -640,11 +644,7 @@ fill: var(--light-color);
     width: 100%;
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
-    visibility: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-    
-    
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);    
 }
 .modal{
     position: absolute;
@@ -674,8 +674,7 @@ fill: var(--light-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
     cursor: pointer;
-    border: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
 .close-btn:focus{
