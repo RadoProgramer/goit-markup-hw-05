@@ -247,9 +247,6 @@ color: var(--pressed-state-color);
     transform: translateY(0%);
 }
 
-.kart-portfolio:focus .hide-title{
-    transform: translateY(0%);
-}
 .link-portfolio:focus .hide-title{
     transform: translateY(0%);
 }
