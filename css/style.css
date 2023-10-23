@@ -96,8 +96,6 @@ img {
 a.menu-after {
     position: relative;
     color: var(--pressed-state-color);
-    padding-top: 25px;
-    padding-bottom: 25px;
 }
 .menu-after::after {
     content: "";
