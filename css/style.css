@@ -82,7 +82,7 @@ img {
     letter-spacing: 0.02em;
 }
 .nav-list{
-    color: var(--pressed-state-color);
+    color: var(--dark-color);
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -91,6 +91,13 @@ img {
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 24px 0;
+    display: inline-block;
+}
+a.menu-after {
+    position: relative;
+    color: var(--pressed-state-color);
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 .menu-after::after {
     content: "";
@@ -101,6 +108,7 @@ img {
     height: 4px;
     border-radius: 2px;
     background: var(--pressed-state-color);
+    display: block;
 }
 
 .link{
@@ -243,7 +251,7 @@ color: var(--pressed-state-color);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.kart-portfolio:hover .hide-title {
+.link-portfolio:hover .hide-title {
     transform: translateY(0%);
 }
 
